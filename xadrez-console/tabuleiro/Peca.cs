@@ -11,5 +11,9 @@
             Tabuleiro = tabuleiro;
             QuantidadeMovimentos = 0;
         }
+
+        public void IncrementarQteMovimentos() {
+            QuantidadeMovimentos++;
+        }
     }
 }
