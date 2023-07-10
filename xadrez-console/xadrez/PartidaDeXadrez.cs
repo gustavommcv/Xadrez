@@ -13,7 +13,7 @@ namespace xadrez {
             Turno = 1;
             JogadorAtual = Cor.Branca;
             Terminada = false;
-            colocarPecas();
+            ColocarPecas();
         }
 
         public void ExecutaMovimento(Posicao origem, Posicao destino) {
@@ -23,7 +23,7 @@ namespace xadrez {
             Tabuleiro.ColocarPeca(p, destino);
         }
 
-        private void colocarPecas() {
+        private void ColocarPecas() {
             Tabuleiro.ColocarPeca(new Torre(Tabuleiro, Cor.Branca), new PosicaoXadrez('c', 1).ToPosicao());
             Tabuleiro.ColocarPeca(new Torre(Tabuleiro, Cor.Branca), new PosicaoXadrez('c', 2).ToPosicao());
             Tabuleiro.ColocarPeca(new Torre(Tabuleiro, Cor.Branca), new PosicaoXadrez('d', 2).ToPosicao());
